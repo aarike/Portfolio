@@ -1,0 +1,218 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*-----Imports------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*-----Common use classes-------*/
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-item .nav-link {
+    font-size: large;
+    color: rgb(140, 140, 140);
+    transition: all 0.4s ease-in 0s;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #E4AF26;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0px 50px;
+}
+
+.nav-link{
+    position:relative;
+}
+
+.current-page{
+    color: #E4AF26 !important;
+}
+
+.navbar-brand {
+    font-family: 'Sacramento', cursive;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+input[type=submit], .btn{
+    cursor: pointer;
+    border: none;
+    border-radius: .25rem;
+    padding: 7px 20px;
+    background-color: #b49129;
+    color: #FFFBFB;
+}
+
+#btn {
+    padding-top: 20px;
+}
+
+a:hover {
+    color: #E4AF26;
+}
+
+a {
+    color: #ffffff;
+}
+
+.carousel-caption, h3{
+    color: rgb(250, 248, 248);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.carousel-caption p{
+    font-size: 25px;
+}
+
+.active{
+    color: rgb(0, 0, 0);
+}
+
+.shecodevision {
+    box-shadow: 0 0 10px 1px #d39e00;
+    padding: 25px 35px 0 35px;
+    border-radius: 5px;
+    margin: 65px 0;
+    padding-bottom: 4rem;
+    color: #807c7c;
+}
+
+.shecodevision a {
+    color: #d39e00;
+    text-decoration: underline !important;
+}
+
+.articles a{
+    color: #d39e00;
+}
+
+.headline {
+    font-size: 20px;
+}
+
+.contain {
+    position: relative;
+}
+  
+.image {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(255, 255, 255);
+}
+  
+.contain:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: #807c7c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: justify;
+}
+.touch {
+    padding: 40px 0;
+}
+
+.contact{
+    border: 1px solid #d39e00;
+    padding: 0 120px 50px;
+    border-radius: 5px;
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 560px){
+    .contact {
+        padding: 35px 7px 30px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 35px 7px 30px;
+    }
+}
+
+.map-container-3{
+    overflow:hidden;
+    padding-bottom:90%;
+    position:relative;
+}
+
+
+.map-container-3 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    padding-bottom: 20px;
+}
+
+iframe{
+    border-width: 0px;
+}
+
+.jumbotron{
+    padding: 20px 0;
+    background-color: #FFFDFD;
+    margin: 0;
+    
+}
+
+.container-fluid {
+    padding-bottom: 40px;
+}
+
+/*------------Footer Section--------------*/
+footer{
+    background-color:rgb(58, 58, 58);
+    color: #ffffff;
+    padding: 15px 0 5px;
+    bottom: 0;
+}
+
+.social-list{
+    padding-inline-start: 0;
+}
+
+.social-list li{
+    list-style: none;
+    display: inline;
+    padding: 10px 10px 10px 0;
+}
+
+.row a {
+    text-decoration: none;
+}
+
+.footer-margin{
+    height: 200px;
+}
